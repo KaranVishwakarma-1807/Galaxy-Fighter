@@ -1,5 +1,5 @@
 #Importing all the required modules
-import pygame  #for game
+import pygame  #for games 
 import os #for file operations
 pygame.font.init() #for font rendering
 pygame.mixer.init() #for sound effects
@@ -156,7 +156,7 @@ def main():
     space1_health = 10
     space2_health = 10
 
-    #initial run case
+    
     run = True
     #man event loop
     while run:
@@ -200,13 +200,11 @@ def main():
         keys_pressed = pygame.key.get_pressed()
         spaceship1_movement(keys_pressed, space_1) 
         spaceship2_movement(keys_pressed, space_2) 
-        #calling function to handle bullets
         handle_bullets(space1_bulltes, space2_bulltes, space_1, space_2)
-        #calling function to draw on the window
         draw_window(space_1, space_2,  space1_bulltes, space2_bulltes, space1_health, space2_health)
 
     main()
-    # pygame.quit()
+    
 
 if  __name__ == "__main__": #to run the main function when the script is running 
     main()
