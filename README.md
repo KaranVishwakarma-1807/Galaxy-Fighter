@@ -4,12 +4,19 @@
  In this game, two player can play against each other as two spaceships. The player who gets 10 points first wins the game by shooting laser to each other.
 
  Despite being so simple, this game has some features like:
+ </br>
  -Movement to both ships
+ </br>
  -Shooting laser
+ </br>
  -Collision detection
+ </br>
  -Score keeping
+ </br>
  -Game over screen
+ </br>
  -Restart game feature
+ </br>
  -Game sounds
 
  In this game I learned to use Pygame module, handle events, create game loop, use classes for game objects, handle collisions, play sounds using "Pygame.mixer" module, and create game over screen.
