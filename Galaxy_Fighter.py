@@ -26,10 +26,10 @@ HEALTH_TEXT = pygame.font.SysFont("comicsans", 40)
 WIN_TEXT = pygame.font.SysFont("comicsans", 50)
 
 #loading the sounds
-HIT_SOUND = pygame.mixer.Sound(os.path.join("./Resources", "Galaxy_Fighter", "hit_sound.mp3"))
-FIRE_SOUND = pygame.mixer.Sound(os.path.join("./Resources", "Galaxy_Fighter", "fire_sound.mp3"))
-MOVEMENT_SOUND = pygame.mixer.Sound(os.path.join("./Resources", "Galaxy_Fighter", "movement_sound.mp3"))
-CELEBRATION_SOUND = pygame.mixer.Sound(os.path.join("./Resources", "Galaxy_Fighter", "celebration_sound.mp3"))
+HIT_SOUND = pygame.mixer.Sound(os.path.join("./Resources", "hit_sound.mp3"))
+FIRE_SOUND = pygame.mixer.Sound(os.path.join("./Resources", "fire_sound.mp3"))
+MOVEMENT_SOUND = pygame.mixer.Sound(os.path.join("./Resources", "movement_sound.mp3"))
+CELEBRATION_SOUND = pygame.mixer.Sound(os.path.join("./Resources", "celebration_sound.mp3"))
 
 #velocity of the bullets
 BULLET_VEL = 7
@@ -49,13 +49,13 @@ VEL = 5
 
 #defining the space-ships
 SPACESHIP_WIDTH, SPACESHIP_HEIGHT = 100, 100   #dimensions for the ship
-spaceship_1 = pygame.image.load("./Resources/Galaxy_Fighter/spaceship_1.png") #loading the image of the spaceship1
+spaceship_1 = pygame.image.load("./Resources/spaceship_1.png") #loading the image of the spaceship1
 spaceship_1 = pygame.transform.rotate(pygame.transform.scale(spaceship_1, (SPACESHIP_WIDTH, SPACESHIP_HEIGHT)), 360) #to rotate the image
 
-spaceship_2 = pygame.image.load(os.path.join("Resources",  "Galaxy_Fighter", "spaceship_2.png")) #loading the image of the spaceship2
+spaceship_2 = pygame.image.load(os.path.join("./Resources", "spaceship_2.png")) #loading the image of the spaceship2
 spaceship_2 = pygame.transform.rotate(pygame.transform.scale(spaceship_2, (SPACESHIP_WIDTH, SPACESHIP_HEIGHT)), 360) #to rotate the image
 #scaling the backgroud image
-space = pygame.transform.scale(pygame.image.load(os.path.join("Resources", "Galaxy_Fighter", "space.jpg")),(WIN_WIDTH, WIN_HEIGHT))
+space = pygame.transform.scale(pygame.image.load(os.path.join("./Resources", "space.jpg")),(WIN_WIDTH, WIN_HEIGHT))
 
 #defining a function to draw all the images and texts on the window
 def draw_window(space_1, space_2, space1_bullets, space2_bullets, space1_health, space2_health):
