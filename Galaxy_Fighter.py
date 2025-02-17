@@ -170,7 +170,7 @@ def main():
             
             #for bullet firing
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_LALT and len(space1_bulltes) < MAX_BULLTES: #condition to fire a bullet
+                if event.key == pygame.K_SPACE and len(space1_bulltes) < MAX_BULLTES: #condition to fire a bullet
                     bullet = pygame.Rect(space_1.x + space_1.width, space_1.y + space_1.height//2 - 2, 10, 5)
                     space1_bulltes.append(bullet)
                     FIRE_SOUND.play() #play the sound of firing
